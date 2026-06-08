@@ -1,0 +1,7 @@
+@use '../../styles/utils';
+
+.LessonsList {
+  display: grid;
+  @include utils.adaptive-value('row-gap', 20, 16);
+  container-type: inline-size;
+}

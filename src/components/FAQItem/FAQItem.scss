@@ -1,0 +1,117 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+.FAQItem {
+  @include utils.adaptive-value('padding-inline', 50, 24);
+  @include utils.adaptive-value('padding-block', 30, 20);
+  @include utils.adaptive-value('border-radius', 12, 10);
+  border: 1px solid utils.$c_white-95;
+  transition-property: padding;
+  transition-duration: utils.$anim-time;
+
+  &--Active {
+    @include utils.adaptive-value('padding-block', 50, 24);
+  }
+
+  &__Question {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    border-bottom: 1px solid transparent;
+    @extend %text_2;
+    color: utils.$c_grey-15;
+    transition-property: border-color, padding-bottom;
+    transition-duration: utils.$anim-time;
+
+    &--Active {
+      border-color: utils.$c_white-95;
+      @include utils.adaptive-value('padding-bottom', 24, 20);
+    }
+  }
+
+  &__Button {
+    position: relative;
+    @include utils.adaptive-value('width', 52, 40);
+    aspect-ratio: 1;
+    @include utils.adaptive-value('border-radius', 8, 6);
+    background-color: utils.$c_orange-95;
+    transition-property: background-color;
+    transition-duration: utils.$anim-time;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      display: block;
+      @include utils.adaptive-value('width', 28, 20);
+      aspect-ratio: 1;
+      background-image: url(../../assets/svg/cross.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      transition-property: transform;
+      transition-duration: utils.$anim-time;
+    }
+
+    &:hover {
+      background-color: utils.$c_orange-50;
+    }
+
+    &--Active {
+      &::before {
+        transform: translate(-50%, -50%) rotate(0);
+      }
+    }
+  }
+
+  &__Answer {
+    display: grid;
+    @include utils.adaptive-value('row-gap', 50, 20);
+    max-height: 0;
+    padding-top: 0;
+    overflow: hidden;
+    transition-property: max-height, padding-top;
+    transition-duration: utils.$anim-time;
+
+    &--Active {
+      max-height: 350px;
+      @include utils.adaptive-value('padding-top', 50, 20);
+    }
+  }
+
+  &__Offer {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    column-gap: 20px;
+    @include utils.adaptive-value('border-radius', 8, 6);
+    border: 1px solid utils.$c_white-95;
+    @include utils.adaptive-value('padding-block', 20, 12);
+    @include utils.adaptive-value('padding-inline', 30, 20);
+    background-color: utils.$c_white-97;
+    @extend %text_1b;
+    color: utils.$c_grey-20;
+  }
+
+  &__Link {
+    display: block;
+    @include utils.adaptive-value('width', 56, 40);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: utils.$c_white;
+    background-image: url(./assets/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    transition-property: background-color;
+    transition-duration: utils.$anim-time;
+
+    &:hover {
+      background-color: utils.$c_orange-70;
+    }
+  }
+}

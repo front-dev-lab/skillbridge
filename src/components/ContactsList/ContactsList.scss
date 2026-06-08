@@ -1,0 +1,43 @@
+@use '../../styles/utils';
+
+.ContactsList {
+  display: grid;
+  @include utils.adaptive-value('row-gap', 20, 12);
+
+  &__Link {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    column-gap: 6px;
+    width: max-content;
+    color: utils.$c_grey-15;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 24px;
+      aspect-ratio: 1;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    &--Email {
+      &::before {
+        background-image: url(./assets/mail.svg);
+      }
+    }
+
+    &--Phone {
+      &::before {
+        background-image: url(./assets/phone.svg);
+      }
+    }
+
+    &--Location {
+      &::before {
+        background-image: url(./assets/location.svg);
+      }
+    }
+  }
+}

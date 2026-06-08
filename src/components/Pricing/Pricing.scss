@@ -1,0 +1,14 @@
+@use '../../styles/utils';
+
+.Pricing {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  @include utils.adaptive-value('padding', 80, 20);
+  border-radius: 12px;
+  background-color: utils.$c_white;
+
+  @include utils.onTablet {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,8 @@
+@use '../../styles/utils';
+
+.BenefitsSection {
+  &__Content {
+    display: grid;
+    @include utils.adaptive-value('row-gap', 80, 40);
+  }
+}

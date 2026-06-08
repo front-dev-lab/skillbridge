@@ -1,0 +1,17 @@
+@use '../../styles/utils';
+
+.AboutPage {
+  display: grid;
+  @include utils.adaptive-value('row-gap', 100, 50);
+  @include utils.adaptive-value('padding-top', 109, 50);
+  @include utils.adaptive-value('padding-bottom', 150, 50);
+
+  &__Achievements {
+    @include utils.adaptive-value('margin-button', 77, 0);
+    @include utils.adaptive-value('scroll-margin-top', utils.$max-header-height, utils.$min-header-height);
+  }
+
+  &__Goals {
+    @include utils.adaptive-value('scroll-margin-top', utils.$max-header-height, utils.$min-header-height);
+  }
+}

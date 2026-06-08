@@ -1,0 +1,112 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+.AuthSection {
+  display: grid;
+  @include utils.adaptive-value('row-gap', 30, 24);
+  @include utils.adaptive-value('border-radius', 12, 10);
+  @include utils.adaptive-value('padding', 50, 30);
+  background-color: utils.$c_white;
+
+  &__Header {
+    display: grid;
+    @include utils.adaptive-value('row-gap', 12, 8);
+    text-align: center;
+    @include utils.adaptive-value('margin-bottom', 20, 6);
+    color: utils.$c_grey-30;
+  }
+
+  &__Title {
+    @extend %text_10;
+    color: utils.$c_grey-15;
+  }
+
+  &__Separator {
+    position: relative;
+    display: grid;
+    justify-content: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      display: block;
+      height: 1px;
+      background-color: utils.$c_white-90;
+    }
+  }
+
+  &__SeparatorText {
+    position: relative;
+    z-index: 1;
+    padding-inline: 12px;
+    color: utils.$c_grey-60;
+    background-color: utils.$c_white;
+  }
+
+  &__GoogleLink {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    @include utils.adaptive-value('border-radius', 10, 6);
+    border: 1px solid utils.$c_white-95;
+    @include utils.adaptive-value('padding-block', 20, 16);
+    background-color: utils.$c_white-97;
+    transition-property: border-color, background-color;
+    transition-duration: utils.$anim-time;
+
+    &:hover {
+      border-color: utils.$c_orange-90;
+      background-color: utils.$c_orange-95;
+    }
+  }
+
+  &__GoogleLinkText {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 14px;
+    align-items: center;
+    @extend %text_1b;
+    color: utils.$c_grey-15;
+
+    &::before {
+      content: '';
+      display: block;
+      @include utils.adaptive-value('width', 30, 24);
+      aspect-ratio: 1;
+      background-image: url(./assets/google.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  &__Text {
+    color: utils.$c_grey-15;
+    text-align: center;
+  }
+
+  &__Link {
+    position: relative;
+    @extend %text_1b;
+    color: utils.$c_grey-15;
+    text-decoration: underline;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      @include utils.adaptive-value('right', -24, -20);
+      transform: translateY(-50%);
+      display: block;
+      @include utils.adaptive-value('width', 24, 20);
+      aspect-ratio: 1;
+      background-image: url(./assets/arrow.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+}

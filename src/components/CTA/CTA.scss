@@ -1,0 +1,35 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+.CTA {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  @include utils.adaptive-value('column-gap', 300, 100);
+  align-items: center;
+  @include utils.adaptive-value('border-radius', 12, 6);
+  @include utils.adaptive-value('padding', 80, 30);
+  background-color: utils.$c_white;
+  background-image: url(./assets/background-image.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 85%;
+
+  @include utils.onTablet {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  &__Article {
+    display: grid;
+    @include utils.adaptive-value('row-gap', 20, 10);
+  }
+
+  &__Title {
+    @extend %text_10;
+    color: utils.$c_grey-15;
+  }
+
+  &__OrangeText {
+    color: utils.$c_orange-50;
+  }
+}

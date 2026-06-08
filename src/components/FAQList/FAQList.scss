@@ -1,0 +1,6 @@
+@use '../../styles/utils';
+
+.FAQList {
+  display: grid;
+  @include utils.adaptive-value('row-gap', 30, 20);
+}

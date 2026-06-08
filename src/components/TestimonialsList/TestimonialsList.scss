@@ -1,0 +1,11 @@
+@use '../../styles/utils';
+
+.TestimonialsList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @include utils.adaptive-value('gap', 30, 20);
+
+  @include utils.onTablet {
+    grid-template-columns: 1fr;
+  }
+}

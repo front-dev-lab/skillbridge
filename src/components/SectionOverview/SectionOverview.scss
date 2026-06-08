@@ -1,0 +1,63 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+.SectionOverview {
+  display: grid;
+  grid-template-areas: 
+    "title title"
+    "text button";
+  align-items: end;
+  @include utils.adaptive-value('column-gap', 300, 100);
+  @include utils.adaptive-value('row-gap', 6, 4);
+
+  @include utils.onTablet {
+    grid-template-areas:
+      "title"
+      "text"
+      "button";
+  }
+
+  &--WithSwitcher {
+    @include utils.onTablet {
+      justify-items: center;
+    }
+  }
+
+  &--InFAQ {
+    grid-template-areas:
+      "title"
+      "text"
+      "button";
+    height: max-content;
+  }
+
+  &--WithoutButton {
+    grid-template-areas:
+      "title"
+      "text";
+  }
+
+  &__Title {
+    grid-area: title;
+    justify-self: left;
+    @extend %text_10;
+    color: utils.$c_grey-15;
+    
+    &--WithoutButton {
+      font-weight: 500;
+    }
+  }
+
+  &__Text {
+    grid-area: text;
+    color: utils.$c_grey-35;
+
+    @include utils.onTablet {
+      margin-bottom: 16px;
+    }
+
+    &--InFAQ {
+      @include utils.adaptive-value('margin-bottom', 50, 20);
+    }
+  }
+}

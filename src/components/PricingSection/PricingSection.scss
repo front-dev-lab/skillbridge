@@ -1,0 +1,9 @@
+@use '../../styles/utils';
+
+.PricingSection {
+  &__Content {
+    display: grid;
+    justify-items: center;
+    @include utils.adaptive-value('row-gap', 80, 40);
+  }
+}

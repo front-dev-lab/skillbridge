@@ -1,0 +1,8 @@
+@use '../../styles/utils';
+
+.Socials {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 14px;
+  width: max-content;
+}

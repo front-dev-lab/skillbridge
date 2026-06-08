@@ -1,0 +1,59 @@
+@use '../../styles/utils';
+
+.Partners {
+  width: 100%;
+  @include utils.adaptive-value('padding', 30, 10);
+  @include utils.adaptive-value('border-radius', 12, 8);
+  background-color: utils.$c_white;
+
+  &__Partner {
+    flex-grow: 1;
+    width: fit-content;
+    border-right: 1px solid utils.$c_white-95;
+    @include utils.adaptive-value('padding-block', 30, 20);
+
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+
+  &__Icon {
+    @include utils.adaptive-value('height', 34, 24);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    &--Zapier {
+      background-image: url(./assets/zapier.png);
+    }
+
+    &--Spotify {
+      background-image: url(./assets/spotify.png);
+    }
+
+    &--Zoom {
+      background-image: url(./assets/zoom.png);
+    }
+
+    &--Amazon {
+      background-image: url(./assets/amazon.png);
+    }
+
+    &--Adobe {
+      background-image: url(./assets/adobe.png);
+    }
+
+    &--Notion {
+      background-image: url(./assets/notion.png);
+    }
+
+    &--Netflix {
+      background-image: url(./assets/netflix.png);
+    }
+  }
+
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+}

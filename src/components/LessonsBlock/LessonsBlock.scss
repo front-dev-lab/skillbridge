@@ -1,0 +1,21 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+.LessonsBlock {
+  display: grid;
+  @include utils.adaptive-value('row-gap', 50, 30);
+  @include utils.adaptive-value('border-radius', 12, 10);
+  @include utils.adaptive-value('padding', 50, 30);
+  background-color: utils.$c_white;
+
+  &__Number {
+    @extend %text_12;
+    color: utils.$c_grey-15;
+    text-align: end;
+  }
+
+  &__Title {
+    @extend %text_5;
+    color: utils.$c_grey-20;
+  }
+}

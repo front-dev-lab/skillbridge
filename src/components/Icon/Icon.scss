@@ -1,0 +1,32 @@
+@use '../../styles/utils';
+
+.Icon {
+  display: block;
+  @include utils.adaptive-value('width', 52, 44);
+  aspect-ratio: 1;
+  @include utils.adaptive-value('border-radius', 8, 6);
+  border: 1px solid utils.$c_white-95;
+  background-color: utils.$c_white-97;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+  transition-property: border-color, background-color;
+  transition-duration: utils.$anim-time;
+
+  &:hover {
+    border-color: utils.$c_orange-90;
+    background-color: utils.$c_orange-95;
+  }
+
+  &--Facebook {
+    background-image: url(./assets/facebook.svg);
+  }
+
+  &--Twitter {
+    background-image: url(./assets/twitter.svg);
+  }
+
+  &--Instagram {
+    background-image: url(./assets/instagram.svg);
+  }
+}

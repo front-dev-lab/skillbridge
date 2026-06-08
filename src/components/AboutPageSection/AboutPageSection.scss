@@ -1,0 +1,8 @@
+@use '../../styles/utils';
+
+.AboutPageSection {
+  &__Content {
+    display: grid;
+    @include utils.adaptive-value('row-gap', 80, 50);
+  }
+}

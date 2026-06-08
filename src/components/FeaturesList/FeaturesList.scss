@@ -1,0 +1,30 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+.FeaturesList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid utils.$c_white-95;
+  @include utils.adaptive-value('padding-top', 40, 20);
+  background-color: utils.$c_white;
+
+  &__Title {
+    flex-grow: 0;
+    @include utils.adaptive-value('margin-bottom', 10, 0);
+    @extend %text_2;
+    color: utils.$c_grey-15;
+    text-align: center;
+  }
+
+  &__Item {
+    flex-grow: 1;
+    @include utils.adaptive-value('padding-inline', 70, 20);
+
+    &:last-of-type {
+      @include utils.adaptive-value('margin-bottom', 40, 20);
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@use './styles/utils';
+@use './styles/typography';
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  @include utils.adaptive-value('padding-top', utils.$max-header-height, utils.$min-header-height);
+  background-color: utils.$c_white-97;
+  font-family: "Be Vietnam Pro", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  @extend %text_1;
+  color: utils.$c_grey-30;
+
+  &__Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+
+  &__Menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform: translateX(100%);
+    transition-property: transform;
+    transition-duration: utils.$anim-time;
+
+    &--Active {
+      transform: translateX(0);
+    }
+  }
+
+  &__Content {
+    flex-grow: 1;
+  }
+}

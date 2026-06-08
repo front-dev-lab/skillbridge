@@ -1,0 +1,12 @@
+@use '../../styles/utils';
+
+.PricingPage {
+  display: grid;
+  @include utils.adaptive-value('row-gap', 100, 50);
+  @include utils.adaptive-value('padding-top', 109, 50);
+  @include utils.adaptive-value('padding-bottom', 150, 50);
+
+  &__Pricing {
+    @include utils.adaptive-value('margin-bottom', 50, 0);
+  }
+}

@@ -1,0 +1,32 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+.CourseDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @container (max-width: 435px) {
+    display: grid;
+    row-gap: 14px;
+  }
+
+  &__Info {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+  }
+
+  &__InfoItem {
+    display: block;
+    border-radius: 8px;
+    border: 1px solid utils.$c_white-95;
+    @include utils.adaptive-value('padding-block', 10, 8);
+    @include utils.adaptive-value('padding-inline', 16, 14);
+  }
+
+  &__Instructor {
+    @extend %text_2;
+    color: utils.$c_grey-15;
+  }
+}

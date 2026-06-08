@@ -1,0 +1,913 @@
+{
+  "benefits": [
+    {
+      "id": 1,
+      "title": "Flexible Learning Schedule",
+      "description": "Fit your coursework around your existing commitments and obligations."
+    },
+    {
+      "id": 2,
+      "title": "Expert Instruction",
+      "description": "Learn from industry experts who have hands-on experience in design and development."
+    },
+    {
+      "id": 3,
+      "title": "Diverse Course Offerings",
+      "description": "Explore a wide range of design and development courses covering various topics."
+    },
+    {
+      "id": 4,
+      "title": "Updated Curriculum",
+      "description": "Access courses with up-to-date content reflecting the latest trends and industry practices."
+    },
+    {
+      "id": 5,
+      "title": "Practical Projects and Assignments",
+      "description": "Develop a portfolio showcasing your skills and abilities to potential employers."
+    },
+    {
+      "id": 6,
+      "title": "Interactive Learning Environment",
+      "description": "Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding."
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "name": "Web Design Fundamentals",
+      "description": "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.",
+      "duration": "4 Weeks",
+      "level": "Beginner",
+      "instructor": "John Smith",
+      "images": [
+        "/img/web-design-fundamentals-course/image-1.jpg",
+        "/img/web-design-fundamentals-course/image-2.jpg",
+        "/img/web-design-fundamentals-course/image-3.jpg"
+      ],
+      "curriculum": [
+        {
+          "id": 1,
+          "name": "Introduction to HTML",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "What is HTML?",
+              "duration": "15 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "HTML Document Structure",
+              "duration": "20 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Working with Text and Links",
+              "duration": "18 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Styling with CSS",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Introduction to CSS",
+              "duration": "16 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Selectors and Properties",
+              "duration": "22 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Flexbox and Grid Basics",
+              "duration": "25 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Introduction to Responsive Design",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Responsive Design Principles",
+              "duration": "17 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Using Media Queries",
+              "duration": "21 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Mobile First Approach",
+              "duration": "19 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Design Principles for Web",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Color Theory Basics",
+              "duration": "14 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Typography for Websites",
+              "duration": "18 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Creating Visual Hierarchy",
+              "duration": "20 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Building a Basic Website",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Planning the Website Structure",
+              "duration": "15 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Creating the Layout",
+              "duration": "28 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Final Touches and Deployment",
+              "duration": "24 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "UI/UX Design",
+      "description": "Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.",
+      "duration": "6 Weeks",
+      "level": "Intermediate",
+      "instructor": "Emily Johnson",
+      "images": [
+        "/img/ux-ui-design-course/image-1.jpg",
+        "/img/ux-ui-design-course/image-2.jpg",
+        "/img/ux-ui-design-course/image-3.jpg"
+      ],
+      "curriculum": [
+        {
+          "id": 1,
+          "name": "Introduction to UI/UX Design",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Understanding UI/UX Design Principles",
+              "duration": "45 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Importance of User-Centered Design",
+              "duration": "1 Hour",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "The Role of UI/UX Design in Product Development",
+              "duration": "45 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "User Research and Analysis",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Conducting User Research and Interviews",
+              "duration": "1 Hour",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Analyzing User Needs and Behavior",
+              "duration": "1 Hour",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Creating User Personas and Scenarios",
+              "duration": "45 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Wireframing and Prototyping",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Introduction to Wireframing Tools and Techniques",
+              "duration": "1 Hour",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Creating Low-Fidelity Wireframes",
+              "duration": "1 Hour",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Prototyping and Interactive Mockups",
+              "duration": "1 Hour",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Visual Design and Branding",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Color Theory and Typography in UI Design",
+              "duration": "1 Hour",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Visual Hierarchy and Layout Design",
+              "duration": "1 Hour",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Creating a Strong Brand Identity",
+              "duration": "45 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Usability Testing and Iteration",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Usability Testing Methods and Techniques",
+              "duration": "1 Hour",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Analyzing Usability Test Results",
+              "duration": "45 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Iterating and Improving UX Designs",
+              "duration": "45 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Mobile App Development",
+      "description": "Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.",
+      "duration": "8 Weeks",
+      "level": "Intermediate",
+      "instructor": "David Brown",
+      "images": [
+        "/img/mobile-app-development-course/image-1.jpg",
+        "/img/mobile-app-development-course/image-2.jpg",
+        "/img/mobile-app-development-course/image-3.jpg"
+      ],
+      "curriculum": [
+        {
+          "id": 1,
+          "name": "Introduction to Mobile App Development",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Overview of Mobile Platforms",
+              "duration": "18 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Setting Up Development Environments",
+              "duration": "25 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Understanding App Architecture",
+              "duration": "20 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Fundamentals of Swift Programming (iOS)",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Introduction to Swift",
+              "duration": "22 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Variables, Functions, and Loops",
+              "duration": "28 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Building Your First iOS Screen",
+              "duration": "30 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Fundamentals of Kotlin Programming (Android)",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Introduction to Kotlin",
+              "duration": "20 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Working with Classes and Functions",
+              "duration": "27 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Creating Your First Android App",
+              "duration": "32 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Building User Interfaces",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Designing Mobile Layouts",
+              "duration": "24 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Navigation and User Interaction",
+              "duration": "26 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Responsive UI Components",
+              "duration": "29 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "App Deployment and Testing",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Debugging and Testing Apps",
+              "duration": "21 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Publishing to App Stores",
+              "duration": "23 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Maintaining and Updating Applications",
+              "duration": "19 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Graphic Design for Beginners",
+      "description": "Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.",
+      "duration": "10 Weeks",
+      "level": "Beginner",
+      "instructor": "Sarah Thompson",
+      "images": [
+        "/img/graphic-design-course/image-1.jpg",
+        "/img/graphic-design-course/image-2.jpg",
+        "/img/graphic-design-course/image-3.jpg"
+      ],
+      "curriculum": [
+        {
+          "id": 1,
+          "name": "Introduction to Graphic Design",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "What is Graphic Design?",
+              "duration": "16 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Understanding Design Principles",
+              "duration": "21 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Tools Used by Designers",
+              "duration": "18 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Typography and Color Theory",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Basics of Typography",
+              "duration": "20 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Choosing Color Palettes",
+              "duration": "24 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Combining Fonts and Colors",
+              "duration": "22 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Layout Design and Composition",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Understanding Visual Hierarchy",
+              "duration": "19 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Working with Grids and Alignment",
+              "duration": "25 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Creating Balanced Compositions",
+              "duration": "23 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Image Editing and Manipulation",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Introduction to Photo Editing",
+              "duration": "18 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Using Layers and Masks",
+              "duration": "27 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Retouching and Effects",
+              "duration": "24 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Designing for Print and Digital Media",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Preparing Designs for Print",
+              "duration": "20 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Creating Graphics for Social Media",
+              "duration": "21 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Exporting and Optimizing Files",
+              "duration": "17 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Front-End Web Development",
+      "description": "Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.",
+      "duration": "10 Weeks",
+      "level": "Intermediate",
+      "instructor": "Michael Adams",
+      "images": [
+        "/img/front-end-development-course/image-1.jpg",
+        "/img/front-end-development-course/image-2.jpg",
+        "/img/front-end-development-course/image-3.jpg"
+      ],
+      "curriculum": [
+        {
+          "id": 1,
+          "name": "HTML Fundamentals",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Introduction to HTML",
+              "duration": "18 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "HTML Elements and Structure",
+              "duration": "24 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Forms, Tables, and Media",
+              "duration": "21 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "CSS Styling and Layouts",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "CSS Selectors and Properties",
+              "duration": "20 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Flexbox and Grid Layouts",
+              "duration": "28 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Animations and Transitions",
+              "duration": "23 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "JavaScript Basics",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Variables and Data Types",
+              "duration": "19 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Functions and Events",
+              "duration": "26 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "DOM Manipulation Basics",
+              "duration": "30 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Building Responsive Websites",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Responsive Design Principles",
+              "duration": "22 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Using Media Queries",
+              "duration": "25 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Mobile First Development",
+              "duration": "20 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Introduction to Bootstrap and React",
+          "lessons": [
+            {
+              "id": 1,
+              "name": "Getting Started with Bootstrap",
+              "duration": "18 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 2,
+              "name": "Introduction to React Components",
+              "duration": "29 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            },
+            {
+              "id": 3,
+              "name": "Building a Simple React App",
+              "duration": "35 Minutes",
+              "video": "https://youtube.com/embed/DLzxrzFCyOs?si=IzWs7gog01FmDsHM"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah L",
+      "imageUrl": "/img/testimonials/sarah-l.jpg",
+      "feedback": "The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!"
+    },
+    {
+      "id": 2,
+      "name": "Jason M",
+      "imageUrl": "/img/testimonials/jason-m.jpg",
+      "feedback": "The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!"
+    },
+    {
+      "id": 3,
+      "name": "Emily R",
+      "imageUrl": "/img/testimonials/emily-r.jpg",
+      "feedback": "The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!"
+    },
+    {
+      "id": 4,
+      "name": "Michael K",
+      "imageUrl": "/img/testimonials/michael-k.jpg",
+      "feedback": "I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!"
+    }
+  ],
+  "plans": [
+    {
+      "id": 1,
+      "name": "Free Plan",
+      "price": {
+        "perMonth": 0,
+        "perYear": 0
+      },
+      "features": [
+        {
+          "id": 1,
+          "text": "Access to selected free courses.",
+          "available": true
+        },
+        {
+          "id": 2,
+          "text": "Limited course materials and resources.",
+          "available": true
+        },
+        {
+          "id": 3,
+          "text": "Basic community support.",
+          "available": true
+        },
+        {
+          "id": 4,
+          "text": "No certification upon completion.",
+          "available": true
+        },
+        {
+          "id": 5,
+          "text": "Ad-supported platform.",
+          "available": true
+        },
+        {
+          "id": 6,
+          "text": "Access to exclusive Pro Plan community forums.",
+          "available": false
+        },
+        {
+          "id": 7,
+          "text": "Early access to new courses and updates.",
+          "available": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Pro Plan",
+      "price": {
+        "perMonth": 79,
+        "perYear": 899
+      },
+      "features": [
+        {
+          "id": 1,
+          "text": "Unlimited access to all courses.",
+          "available": true
+        },
+        {
+          "id": 2,
+          "text": "Unlimited course materials and resources.",
+          "available": true
+        },
+        {
+          "id": 3,
+          "text": "Priority support from instructors.",
+          "available": true
+        },
+        {
+          "id": 4,
+          "text": "Course completion certificates.",
+          "available": true
+        },
+        {
+          "id": 5,
+          "text": "Ad-free experience.",
+          "available": true
+        },
+        {
+          "id": 6,
+          "text": "Access to exclusive Pro Plan community forums.",
+          "available": true
+        },
+        {
+          "id": 7,
+          "text": "Early access to new courses and updates.",
+          "available": true
+        }
+      ]
+    }
+  ],
+  "FAQs": [
+    {
+      "id": 1,
+      "question": "Can I enroll in multiple courses at once?",
+      "answer": "Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.",
+      "offer": "Enrollment Process for Different Courses"
+    },
+    {
+      "id": 2,
+      "question": "What kind of support can I expect from instructors?",
+      "answer": "Our instructors provide guidance through Q&A sessions, course discussions, and feedback on assignments to help you succeed throughout the learning process.",
+      "offer": "24/7 Instructor and Community Support"
+    },
+    {
+      "id": 3,
+      "question": "Are the courses self-paced or do they have specific start and end dates?",
+      "answer": "Most of our courses are self-paced, allowing you to learn at your own speed. You can start anytime and complete the course whenever it fits your schedule.",
+      "offer": "Flexible Learning Schedule"
+    },
+    {
+      "id": 4,
+      "question": "Are there any prerequisites for the courses?",
+      "answer": "Some intermediate and advanced courses may require basic knowledge of the subject, but beginner courses are designed for learners with no prior experience.",
+      "offer": "Beginner-Friendly and Advanced Programs"
+    },
+    {
+      "id": 5,
+      "question": "Can I download the course materials for offline access?",
+      "answer": "Yes, selected course resources such as PDFs, templates, and practice files can be downloaded for offline use anytime during your enrollment.",
+      "offer": "Offline Access to Learning Materials"
+    }
+  ],
+  "achievements": [
+    {
+      "id": 1,
+      "title": "Trusted by Thousands",
+      "text": "We have successfully served thousands of students, helping them unlock their potential and achieve their career goals.",
+      "icon": "/img/icons/crown.png"
+    },
+    {
+      "id": 2,
+      "title": "Award-Winning Courses",
+      "text": "Our courses have received recognition and accolades in the industry for their quality, depth of content, and effective teaching methodologies.",
+      "icon": "/img/icons/medal.png"
+    },
+    {
+      "id": 3,
+      "title": "Positive Student Feedback",
+      "text": "We take pride in the positive feedback we receive from our students, who appreciate the practicality and relevance of our course materials.",
+      "icon": "/img/icons/masks.png"
+    },
+    {
+      "id": 4,
+      "title": "Industry Partnerships",
+      "text": "We have established strong partnerships with industry leaders, enabling us to provide our students with access to the latest tools and technologies",
+      "icon": "/img/icons/shield.png"
+    }
+  ],
+  "goals": [
+    {
+      "id": 1,
+      "title": "Provide Practical Skills",
+      "text": "We focus on delivering practical skills that are relevant to the current industry demands. Our courses are designed to equip learners with the knowledge and tools needed to excel in their chosen field.",
+      "icon": "/img/icons/backpack.png"
+    },
+    {
+      "id": 2,
+      "title": "Foster Creative Problem-Solving",
+      "text": "We encourage creative thinking and problem-solving abilities, allowing our students to tackle real-world challenges with confidence and innovation.",
+      "icon": "/img/icons/book.png"
+    },
+    {
+      "id": 3,
+      "title": "Promote Collaboration and Community",
+      "text": "We believe in the power of collaboration and peer learning. Our platform fosters a supportive and inclusive community where learners can connect, share insights, and grow together.",
+      "icon": "/img/icons/pazzlepiece.png"
+    },
+    {
+      "id": 4,
+      "title": "Stay Ahead of the Curve",
+      "text": "The digital landscape is constantly evolving, and we strive to stay at the forefront of industry trends. We regularly update our course content to ensure our students receive the latest knowledge and skills.",
+      "icon": "/img/icons/light-beacon.png"
+    }
+  ]
+}

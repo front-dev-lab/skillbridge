@@ -1,0 +1,63 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+.ButtonLink {
+  display: block;
+  width: max-content;
+  height: max-content;
+  @include utils.adaptive-value('padding-block', 18, 14);
+  @include utils.adaptive-value('padding-inline', 34, 20);
+  @include utils.adaptive-value('border-radius', 8, 6);
+  background-color: utils.$c_orange-50;
+  @extend %text_1c;
+  color: utils.$c_white;
+  transition-property: background-color;
+  transition-duration: utils.$anim-time;
+
+  &:hover {
+    background-color: utils.$c_orange-70;
+  }
+
+  &--Small {
+    @include utils.adaptive-value('padding-block', 14, 12);
+    @extend %text_1;
+  }
+
+  &--Big {
+    @include utils.adaptive-value('padding-block', 20, 18);
+  }
+
+  &--Wide {
+    width: 100%;
+    text-align: center;
+  }
+
+  &--White {
+    border: 1px solid utils.$c_white-95;
+    background-color: utils.$c_white;
+    @extend %text_1b;
+    color: utils.$c_grey-15;
+    transition-property: background-color, color, border-color;
+
+    &:hover {
+      border-color: utils.$c_orange-70;
+      color: utils.$c_white;
+    }
+  }
+
+  &--Smoke {
+    @extend .ButtonLink--White;
+    background-color: utils.$c_white-99;
+  }
+
+
+  &--Grey {
+    @extend .ButtonLink--White;
+    border: none;
+    background-color: utils.$c_white-97;
+  }
+
+  &--NoBorderRadius {
+    border-radius: 0;
+  }
+}

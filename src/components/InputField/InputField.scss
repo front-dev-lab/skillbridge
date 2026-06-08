@@ -1,0 +1,61 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+$max-input-padding: 24;
+$min-input-padding: 20;
+
+.InputField {
+  display: grid;
+  @include utils.adaptive-value('row-gap', 14, 10);
+  width: 100%;
+  @extend %text_1b;
+  color: utils.$c_grey-15;
+
+  &__InputWrapper {
+    position: relative;
+  }
+
+  &__Input {
+    position: relative;
+    display: block;
+    width: 100%;
+    @include utils.adaptive-value('border-radius', 10, 8);
+    border: 1px solid utils.$c_white-95;
+    @include utils.adaptive-value('padding', $max-input-padding, $min-input-padding);
+    background-color: utils.$c_white-99;
+    @extend %text_1;
+    color: utils.$c_grey-30;
+
+    &::placeholder {
+      color: utils.$c_grey-40;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  &__EyeButton {
+    position: absolute;
+    top: 50%;
+    @include utils.adaptive-value('right', $max-input-padding, $min-input-padding);
+    transform: translateY(-50%);
+    display: block;
+    @include utils.adaptive-value('width', 24, 20);
+    aspect-ratio: 1;
+    background-image: url(./assets/eye.svg);
+    background-size: contain;
+    background-position: center;
+
+    &--Active {
+      background-image: url(./assets/eye-active.svg);
+    }
+  }
+
+  &__Link {
+    justify-self: flex-end;
+    color: utils.$c_grey-30;
+  }
+}

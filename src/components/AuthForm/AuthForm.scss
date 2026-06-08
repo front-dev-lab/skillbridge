@@ -1,0 +1,38 @@
+@use '../../styles/utils';
+
+.AuthForm {
+  display: grid;
+  @include utils.adaptive-value('row-gap', 24, 20);
+
+  &__Label {
+    display: grid;
+    grid-auto-flow: column;
+    @include utils.adaptive-value('column-gap', 10, 8);
+    align-items: center;
+    max-width: max-content;
+    color: utils.$c_grey-40;
+    cursor: pointer;
+  }
+
+  &__CheckBox {
+    display: block;
+    @include utils.adaptive-value('width', 30, 24);
+    aspect-ratio: 1;
+    border-radius: 4px;
+    border: 1px solid utils.$c_white-95;
+    background-color: utils.$c_white-97;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    &:checked {
+      border-color: utils.$c_grey-30;
+      background-image: url(./assets/check.svg);
+    }
+  }
+
+  &__Link {
+    color: utils.$c_grey-40;
+    text-decoration: underline;
+  }
+}

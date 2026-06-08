@@ -1,0 +1,48 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+.BenefitCard {
+  display: grid;
+  @include utils.adaptive-value('row-gap', 50, 30);
+  height: 100%;
+  @include utils.adaptive-value('border-radius', 12, 10);
+  @include utils.adaptive-value('padding', 50, 30);
+  background-color: utils.$c_white;
+
+  &__Number {
+    justify-self: end;
+    @extend %text_12;
+    color: utils.$c_grey-15;
+  }
+
+  &__Article {
+    display: grid;
+    row-gap: 10px;
+  }
+
+  &__Title {
+    @extend %text_5;
+    color: utils.$c_grey-20;
+  }
+
+  &__Link {
+    justify-self: end;
+    display: block;
+    @include utils.adaptive-value('width', 74, 54);
+    aspect-ratio: 1;
+    border-radius: 8px;
+    border: 1px solid utils.$c_white-95;
+    background-color: utils.$c_white-99;
+    background-image: url(./assets/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 46%;
+    background-position: center;
+    transform-origin: border-color, background-color;
+    transition-duration: utils.$anim-time;
+
+    &:hover {
+      border-color: utils.$c_orange-95;
+      background-color: utils.$c_orange-99;
+    }
+  }
+}

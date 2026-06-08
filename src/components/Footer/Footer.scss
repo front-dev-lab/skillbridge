@@ -1,0 +1,68 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+.Footer {
+  @include utils.adaptive-value('padding-top', 100, 50);
+  @include utils.adaptive-value('padding-bottom', 30, 24);
+  background-color: utils.$c_white;
+
+  &__Content {
+    display: grid;
+    @include utils.adaptive-value('row-gap', 50, 20);
+  }
+
+  &__Top {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    column-gap: 80px;
+    @include utils.adaptive-value('padding-bottom', 50, 20);
+    border-bottom: 1px solid utils.$c_white-95;
+
+    @include utils.onTablet {
+      grid-auto-flow: row;
+      row-gap: 24px;
+    }
+  }
+
+  &__Left {
+    display: grid;
+    @include utils.adaptive-value('row-gap', 40, 30);
+  }
+
+  &__Right  {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(128px, 249px));
+    column-gap: 30px;
+
+    @include utils.onMobile {
+      grid-template-areas:
+        "links links"
+        "socials socials";
+      row-gap: 24px;
+    }
+  }
+
+  &__Column {
+    display: grid;
+    @include utils.adaptive-value('row-gap', 14, 10);
+    height: max-content;
+
+    &:last-of-type {
+      @include utils.onMobile {
+        grid-area: socials;
+        width: max-content;
+      }
+    }
+  }
+
+  &__ColumnTitle {
+    @extend %text_3;
+    color: utils.$c_grey-15;
+  }
+
+  &__Copyright {
+    text-align: center;
+    color: utils.$c_grey-40;
+  }
+}

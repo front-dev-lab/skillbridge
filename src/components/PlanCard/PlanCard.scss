@@ -1,0 +1,34 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+.PlanCard {
+  display: grid;
+  grid-template-rows: max-content max-content 1fr;
+  @include utils.adaptive-value('row-gap', 50, 30);
+  border-radius: 12px;
+  border: 1px solid utils.$c_white-95;
+  @include utils.adaptive-value('padding-top', 50, 30);
+  @include utils.adaptive-value('padding-bottom', 30, 20);
+  @include utils.adaptive-value('padding-inline', 30, 20);
+  background-color: utils.$c_white-99;
+  text-align: center;
+
+  &__Title {
+    flex-grow: 0;
+    @include utils.adaptive-value('border-radius', 6, 4);
+    border: 1px solid utils.$c_orange-90;
+    @include utils.adaptive-value('padding-block', 12, 8);
+    background-color: utils.$c_orange-97;
+    @extend %text_4;
+    color: utils.$c_grey-15;
+  }
+
+  &__Price {
+    @extend %text_12b;
+    color: utils.$c_grey-15;
+  }
+
+  &__Period {
+    @extend %text_1b;
+  }
+}

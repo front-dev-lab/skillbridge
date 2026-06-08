@@ -1,0 +1,12 @@
+@use '../../styles/utils';
+
+.CoursePage {
+  display: grid;
+  @include utils.adaptive-value('row-gap', 100, 50);
+  @include utils.adaptive-value('padding-top', 109, 50);
+  @include utils.adaptive-value('padding-bottom', 120, 50);
+
+  &__Video {
+    @include utils.adaptive-value('scroll-margin-top', utils.$max-header-height, utils.$min-header-height);
+  }
+}

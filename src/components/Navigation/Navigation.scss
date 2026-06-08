@@ -1,0 +1,30 @@
+@use '../../styles/utils';
+
+.Navigation {
+  &__List {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 2px;
+    width: max-content;
+
+    &--Menu {
+      grid-auto-flow: row;
+      justify-items: center;
+    }
+  }
+
+  &__Link {
+    width: max-content;
+    display: block;
+    border-radius: 8px;
+    padding: 14px 24px;
+    color: utils.$c_grey-15;
+    transition-property: background-color;
+    transition-duration: utils.$anim-time;
+
+    &:hover,
+    &--Active {
+      background-color: utils.$c_white-95;
+    }
+  }
+}

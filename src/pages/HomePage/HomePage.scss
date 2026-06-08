@@ -1,0 +1,31 @@
+@use '../../styles/utils';
+
+.HomePage {
+  &__Hero {
+    @include utils.adaptive-value('margin-bottom', 100, 50);
+  }
+
+  &__Benefits {
+    @include utils.adaptive-value('scroll-margin-top', utils.$max-header-height, utils.$min-header-height);
+    @include utils.adaptive-value('margin-bottom', 100, 50);
+  }
+
+  &__Courses {
+    @include utils.adaptive-value('scroll-margin-top', utils.$max-header-height, utils.$min-header-height);
+    @include utils.adaptive-value('margin-bottom', 108, 50);
+  }
+
+  &__Testimonials {
+    @include utils.adaptive-value('scroll-margin-top', utils.$max-header-height, utils.$min-header-height);
+    @include utils.adaptive-value('margin-bottom', 168, 50);
+  }
+
+  &__Pricing {
+    @include utils.adaptive-value('margin-bottom', 150, 50);
+  }
+
+  &__FAQ {
+    @include utils.adaptive-value('scroll-margin-top', utils.$max-header-height, utils.$min-header-height);
+    @include utils.adaptive-value('margin-bottom', 142, 50);
+  }
+}

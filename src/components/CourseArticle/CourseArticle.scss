@@ -1,0 +1,26 @@
+@use '../../styles/utils';
+
+.CourseArticle {
+  display: grid;
+  @include utils.adaptive-value('row-gap', 30, 24);
+  container-type: inline-size;
+
+  &__Images {
+    display: grid;
+    grid-auto-flow: column;
+    @include utils.adaptive-value('column-gap', 30, 10);
+  }
+
+  &__Image {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 478 / 422;
+    object-fit: cover;
+    object-position: center;
+
+    @include utils.onTablet {
+      aspect-ratio: 1;
+    }
+  }
+}

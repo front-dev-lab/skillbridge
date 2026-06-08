@@ -1,0 +1,30 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+.CurriculumCard {
+  display: grid;
+  border-right: 1px solid utils.$c_white-95;
+  @include utils.adaptive-value('row-gap', 20, 16);
+  @include utils.adaptive-value('padding-inline', 50, 24);
+  color: utils.$c_grey-20;
+
+  &:last-of-type {
+    border-right: none;
+  }
+
+  @include utils.onTablet {
+    border-right: none;
+    border-bottom: 1px solid utils.$c_white-95;
+    padding-block: 24px;
+    padding-inline: 0;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  &__Number {
+    @extend %text_11;
+    color: utils.$c_grey-15;
+  }
+}

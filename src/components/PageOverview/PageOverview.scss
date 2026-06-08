@@ -1,0 +1,25 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+.PageOverview {
+  @include utils.adaptive-value('scroll-margin-top', utils.$max-header-height, utils.$min-header-height);
+  border-bottom: 1px solid utils.$c_white-90;
+  @include utils.adaptive-value('padding-bottom', 50, 30);
+  color: utils.$c_grey-35;
+
+  &__Content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    @include utils.adaptive-value('gap', 100, 16);
+
+    @include utils.onTablet {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__Title {
+    @extend %text_10;
+    color: utils.$c_grey-15;
+  }
+}

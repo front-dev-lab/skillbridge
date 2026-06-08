@@ -1,0 +1,32 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+.CourseCard {
+  container-type: inline-size;
+  display: grid;
+  @include utils.adaptive-value('row-gap', 30, 24);
+  height: 100%;
+  @include utils.adaptive-value('border-radius', 12, 10);
+  border: 1px solid utils.$c_white-95;
+  @include utils.adaptive-value('padding', 50, 24);
+  background-color: utils.$c_white;
+
+  &__Image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 683 / 380;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__Article {
+    display: grid;
+    @include utils.adaptive-value('row-gap', 14, 10);
+  }
+
+  &__Title {
+    @extend %text_5;
+    color: utils.$c_grey-15;
+  }
+}

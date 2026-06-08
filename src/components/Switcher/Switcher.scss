@@ -1,0 +1,39 @@
+@use '../../styles/utils';
+
+$switcher-padding: 12px;
+$max-button-height: 55;
+$min-button-height: 45;
+
+.Switcher {
+  position: relative;
+  display: flex;
+  width: max-content;
+  padding: $switcher-padding;
+  background-color: utils.$c_white;
+  border-radius: 8px;
+
+  &__Button {
+    position: relative;
+    z-index: 1;
+    @include utils.adaptive-value('height', $max-button-height, $min-button-height);
+    @include utils.adaptive-value('padding-inline', 30, 24);
+    transition-property: color;
+    transition-duration: utils.$anim-time;
+
+    &--Active {
+      color: utils.$c_white;
+    }
+  }
+
+  &__Toggler {
+    position: absolute;
+    top: $switcher-padding;
+    left: $switcher-padding;
+    width: 100%;
+    @include utils.adaptive-value('height', $max-button-height, $min-button-height);
+    border-radius: 6px;
+    background-color: utils.$c_orange-50;
+    transition-property: max-width, transform;
+    transition-duration: utils.$anim-time;
+  }
+}

@@ -1,0 +1,35 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+.AboutPageItemCard {
+  display: grid;
+  @include utils.adaptive-value('row-gap', 30, 24);
+  @include utils.adaptive-value('border-radius', 12, 10);
+  @include utils.adaptive-value('padding', 50, 30);
+  background-color: utils.$c_white;
+
+  &__Icon {
+    width: max-content;
+    border-radius: 8px;
+    border: 1px solid utils.$c_orange-90;
+    padding: 16px;
+    background-color: utils.$c_orange-97;
+  }
+
+  &__Image {
+    display: block;
+    @include utils.adaptive-value('width', 34, 28);
+    aspect-ratio: 1;
+  }
+
+  &__Article {
+    display: grid;
+    @include utils.adaptive-value('row-gap', 14, 6);
+    color: utils.$c_grey-35;
+  }
+
+  &__Title {
+    @extend %text_5;
+    color: utils.$c_grey-15;
+  }
+}

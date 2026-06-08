@@ -1,0 +1,105 @@
+@use 'utils';
+
+%text_1 {
+  @include utils.adaptive-value('font-size', 18, 14);
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+%text_1b {
+  @extend %text_1;
+  font-weight: 500;
+}
+
+%text_1c {
+  @extend %text_1;
+  font-weight: 600;
+}
+
+%text_2 {
+  @include utils.adaptive-value('font-size', 20, 16);
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0%;
+}
+
+%text_3 {
+  @include utils.adaptive-value('font-size', 20, 18);
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+%text_4 {
+  @include utils.adaptive-value('font-size', 22, 16);
+  font-weight: 500;
+  line-height: 169%;
+  letter-spacing: 0%;
+}
+
+%text_5 {
+  @include utils.adaptive-value('font-size', 24, 20);
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.6%;
+}
+
+%text_6 {
+  @include utils.adaptive-value('font-size', 38, 24);
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+%text_7 {
+  @include utils.adaptive-value('font-size', 38, 28);
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+%text_8 {
+  @include utils.adaptive-value('font-size', 48, 16);
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+%text_9 {
+  @include utils.adaptive-value('font-size', 48, 24);
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+%text_10 {
+  @include utils.adaptive-value('font-size', 48, 28);
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+%text_10b {
+  @extend %text_10;
+  line-height: 120%;
+}
+
+%text_11 {
+  @include utils.adaptive-value('font-size', 50, 30);
+  font-weight: 800;
+  line-height: 80%;
+  letter-spacing: 0%;
+}
+
+%text_12 {
+  @include utils.adaptive-value('font-size', 80, 50);
+  font-weight: 700;
+  line-height: 73%;
+  letter-spacing: 0%;
+}
+
+%text_12b {
+  @extend %text_12;
+  font-weight: 600;
+}

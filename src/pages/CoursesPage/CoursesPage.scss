@@ -1,0 +1,15 @@
+@use '../../styles/utils';
+
+$max-page-gap: 50;
+$min-page-gap: 20;
+
+.CoursesPage {
+  display: grid;
+  @include utils.adaptive-value('row-gap', $max-page-gap, $min-page-gap);
+  @include utils.adaptive-value('padding-top', 109, 50);
+  @include utils.adaptive-value('padding-bottom', 150, 50);
+
+  & > :first-child {
+    @include utils.adaptive-value('margin-bottom', $max-page-gap + 50, $min-page-gap + 30);
+  }
+}

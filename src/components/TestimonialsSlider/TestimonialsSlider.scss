@@ -1,0 +1,57 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+.TestimonialsSlider {
+  min-width: 0;
+
+  &__Text {
+    display: grid;
+    @include utils.adaptive-value('row-gap', 6, 4);
+    @include utils.adaptive-value('margin-bottom', 80, 40);
+    color: utils.$c_grey-35;
+  }
+
+  &__Title {
+    @extend %text_7;
+    color: utils.$c_grey-15;
+  }
+
+  &__Slider {
+    @include utils.adaptive-value('margin-bottom', 30, 20);
+  }
+
+  &__Buttons {
+    justify-self: end;
+    display: grid;
+    grid-auto-flow: column;
+    @include utils.adaptive-value('column-gap', 15, 10);
+    width: max-content;
+  }
+
+  &__Button {
+    display: block;
+    @include utils.adaptive-value('width', 62, 54);
+    aspect-ratio: 1;
+    @include utils.adaptive-value('border-radius', 8, 6);
+    border: 1px solid utils.$c_white-95;
+    background-color: utils.$c_white;
+    background-repeat: no-repeat;
+    @include utils.adaptive-value('background-size', 34, 30);
+    background-position: center;
+    transition-property: border-color, background-color;
+    transition-duration: utils.$anim-time;
+
+    &:hover {
+      border-color: utils.$c_orange-90;
+      background-color: utils.$c_orange-95;
+    }
+
+    &--Prev {
+      background-image: url(./assets/prev.svg);
+    }
+
+    &--Next {
+      background-image: url(./assets/next.svg);
+    }
+  }
+}

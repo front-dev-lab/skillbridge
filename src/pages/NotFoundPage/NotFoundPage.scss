@@ -1,0 +1,18 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+.NotFoundPage {
+  @include utils.adaptive-value('padding-top', 100, 50);
+  @include utils.adaptive-value('padding-bottom', 150, 50);
+
+  &__Content {
+    display: grid;
+    justify-items: center;
+    @include utils.adaptive-value('row-gap', 80, 30);
+  }
+
+  &__Title {
+    @extend %text_12;
+    color: utils.$c_grey-15;
+  }
+}

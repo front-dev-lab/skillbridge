@@ -1,0 +1,11 @@
+@use '../../styles/utils';
+
+.Course {
+  &__Content {
+    display: grid;
+    @include utils.adaptive-value('row-gap', 50, 40);
+    @include utils.adaptive-value('border-radius', 12, 8);
+    @include utils.adaptive-value('padding', 50, 24);
+    background-color: utils.$c_white;
+  }
+}

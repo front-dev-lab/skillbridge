@@ -1,0 +1,7 @@
+@use '../../styles/utils';
+@use '../../styles/_typography.scss';
+
+.ErrorMessage {
+  @extend %text_1;
+  color: utils.$c_orange-50;
+}

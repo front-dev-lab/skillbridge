@@ -1,0 +1,32 @@
+@use '../../styles/utils';
+
+.AuthPage {
+  @include utils.adaptive-value('padding-top', 100, 50);
+  @include utils.adaptive-value('padding-bottom', 150, 50);
+
+  &__Content  {
+    display: grid;
+    grid-template-columns: minmax(100px, 830px) minmax(100px, 660px);
+    grid-template-areas: 
+      "slider form";
+    justify-content: space-between;
+    align-items: center;
+    @include utils.adaptive-value('column-gap', 100, 0);
+
+    @include utils.onTablet {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "form"
+        "slider";
+      @include utils.adaptive-value('row-gap', 80, 50);
+    }
+  }
+
+  &__Slider {
+    grid-area: slider;
+  }
+
+  &__Form {
+    grid-area: form;
+  }
+}

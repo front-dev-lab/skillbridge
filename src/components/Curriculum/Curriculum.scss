@@ -1,0 +1,27 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+.Curriculum {
+  @include utils.adaptive-value('border-radius', 12, 10);
+  border: 1px solid utils.$c_white-95;
+
+  &__Title {
+    border-bottom: 1px solid utils.$c_white-95;
+    @include utils.adaptive-value('padding-block', 30, 20);
+    @include utils.adaptive-value('padding-inline', 24, 14);
+    @extend %text_4;
+    color: utils.$c_grey-15;
+  }
+
+  &__List {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-block: 24px;
+
+    @include utils.onTablet {
+      grid-template-columns: 1fr;
+      padding-block: 0;
+      @include utils.adaptive-value('padding-inline', 50, 24);
+    }
+  }
+}

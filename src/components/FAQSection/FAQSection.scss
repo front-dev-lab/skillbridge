@@ -1,0 +1,19 @@
+@use '../../styles/utils';
+
+.FAQSection {
+  &__Content {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(100px, 408px) minmax(100px, 867px);
+    justify-content: space-between;
+    column-gap: 30px;
+    border-radius: 12px;
+    @include utils.adaptive-value('padding', 100, 24);
+    background-color: utils.$c_white;
+
+    @include utils.onTablet {
+      grid-template-columns: 1fr;
+      row-gap: 40px;
+    }
+  }
+}

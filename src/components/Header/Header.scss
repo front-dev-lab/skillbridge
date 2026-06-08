@@ -1,0 +1,36 @@
+@use '../../styles/utils';
+
+.Header {
+  width: 100%;
+  border-bottom: 1px solid utils.$c_white-90;
+  @include utils.adaptive-value('padding-top', 20, 16);
+  @include utils.adaptive-value('padding-bottom', 24, 16);
+  background-color: utils.$c_white-97;
+
+  &__Content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__Column {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    @include utils.adaptive-value('column-gap', 50, 20);
+  }
+
+  &__Navigation {
+    @include utils.onTablet {
+      display: none;
+    }
+  }
+
+  &__Burger {
+    display: none;
+
+    @include utils.onTablet {
+      display: block;
+    }
+  }
+}

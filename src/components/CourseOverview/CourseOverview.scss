@@ -1,0 +1,25 @@
+@use '../../styles/utils';
+@use '../../styles/typography';
+
+.CourseOverview {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  column-gap: 50px;
+
+  @include utils.onMobile {
+    grid-auto-flow: row;
+    row-gap: 20px;
+  }
+
+  &__Text {
+    display: grid;
+    @include utils.adaptive-value('row-gap', 10, 4);
+    color: utils.$c_grey-35;
+  }
+
+  &__Title {
+    @extend %text_3;
+    color: utils.$c_grey-15;
+  }
+}
