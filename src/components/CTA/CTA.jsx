@@ -20,7 +20,7 @@ export const CTA = () => (
     </article>
 
     <ButtonLink
-      to="/contact"
+      to="/"
       text="Join Now"
     />
   </div>
